@@ -21,18 +21,6 @@ app.get('/', (req, res)=>{
     res.send('La API esta funciona correctamente.')
 })
 
-app.get('/1', (req, res)=>{
-    res.send('Perro')
-})
-
-app.get('/2', (req, res)=>{
-    res.send('Gato')
-})
-
-app.get('/3', (req, res)=>{
-    res.send('Cotorro')
-})
-
 app.use('/api', routes)
 
 app.listen(app.get('port'), ()=>{
